@@ -119,10 +119,11 @@ double lumpSumAmount, double interestRate ){
         cout.precision(2);
         cout.setf(ios::fixed);
         cout << cash1 <<"       "<<cash2<< endl;
-    if (age != lastAge)
-    cash1 = cash1 + cash1*interestRate / 100.0;
-    cash2 = 25000 + cash2 + cash2*interestRate / 100.0;
-    age++;
+    if (age != lastAge){
+        cash1 = cash1 + cash1*interestRate / 100.0;
+        cash2 = 25000 + cash2 + cash2*interestRate / 100.0;
+        }
+    age++;https://github.com/hzaiqfaiz/lab08/blob/main/1-5.cpp
     }
 system("pause");
 }
